@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap');
+
+:root{
+
+    /* COLOR */
+    --bg-color: hsl(216, 12%, 8%);
+    --primary-color: hsl(25, 97%, 53%);
+    --secondary-color: hsl(213, 19%, 18%);
+    --text-color: hsl(216, 12%, 54%);
+    --text-color-alt: hsl(217, 12%, 63%);
+    --neutral-color: hsl(0, 0%, 100%);
+
+    /* TOPOGRAPHY */
+    --normal-font: .913rem;
+    --font-family: 'Overpass', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--normal-font);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: .836rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: inherit;
+    color: var(--neutral-color);
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 1.225rem;
+    transition: .5s ease-in;
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    max-width: 375px;
+    margin: 1rem 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+}
+.card{
+    margin: 1rem 1.5rem;
+}
+.star_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(67, 71, 76, 0.303);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.star_img{
+    z-index: 10;
+    width: 15px;
+}
+.card_subtitle{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--neutral-color);
+    margin: 2.5rem 0 .5rem;
+}
+.card_selection{
+    display: flex;
+    margin: 1.25rem 0;
+    justify-content: flex-start;
+    column-gap: 1.25rem;
+    align-items: center;
+}
+.card__item{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 23px;
+    background-color: rgba(67, 71, 76, 0.303);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.card__item:hover{
+    background-color: var(--primary-color);
+}
+.card__item:hover a{
+    color: var(--neutral-color);
+}
+.card__item .active{
+    background-color: var(--text-color);
+}
+.card_link{
+    color: var(--text-color);
+}
+.card_btn:hover{
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+}
+.grid{
+    display: grid;
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
