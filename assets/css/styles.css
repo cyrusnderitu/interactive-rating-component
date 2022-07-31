@@ -134,8 +134,9 @@ button{
 }
 
 @media screen and (max-width: 380px) {
-    .container{
-        width: 330px;
+    .rater,
+    .thanks{
+        width: 320px;
         margin: 1rem 1.5rem;
     }
     .card{
