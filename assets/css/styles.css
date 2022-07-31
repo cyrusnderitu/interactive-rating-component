@@ -27,10 +27,14 @@ body{
     font-size: var(--normal-font);
     font-family: var(--font-family);
     display: flex;
+    position: relative;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+/* body div:first-child{
+    display: none;
+} */
 a{
     text-decoration: none;
 }
@@ -62,7 +66,7 @@ button{
     background-color: var(--secondary-color);
 }
 .card{
-    margin: 1rem 1.5rem;
+    margin: 2rem 1.5rem;
 }
 .star_icon{
     width: 30px;
@@ -167,6 +171,34 @@ button{
     }
 }
 
+.thanks_img{
+    width: 100%;
+    object-fit: cover;
+}
+.res{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    align-items: center;
+    margin: 3rem 1.5rem;
+    text-align: center;
+}
+.thanks_select{
+    background-color: rgba(67, 71, 76, 0.303);
+    color: var(--primary-color);
+    padding: 7px 14px;
+    border-radius: 5rem;
+    opacity: .6;
+}
+.thanks_sub{
+    font-weight: 600;
+    font-size: 1.65rem;
+    color: var(--neutral-color);
+}
+.thanks_desc{
+    font-size: 1rem;
+}
 
 
 .attribution { 
