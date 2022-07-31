@@ -1,5 +1,8 @@
 const active = document.querySelectorAll('.card__item')
 const btnSubmit = document.querySelector('.card_btn')
+const show = document.querySelector('.thanks_select')
+const rater = document.querySelector('.rater')
+const thanks = document.querySelector('.thanks')
 
 
 active.forEach((item)=>{
@@ -22,9 +25,11 @@ const addActive = (select)=>{
 
 btnSubmit.addEventListener('click', ()=>{
     const activeItem = document.querySelector('.active')
-    
+
     if(activeItem){
-        console.log(activeItem.innerText)
+        rater.style.display = 'none';
+        thanks.style.display = 'initial';
+        show.innerHTML = `You selected ${activeItem.innerText} out of 5`
     }else{
         alert('Please rate us')
     }
